@@ -1,0 +1,112 @@
+/* layout, container & grids covers only two media queries: desktop & mobile.
+In order to be perfect in all devices we have to add other media query for tablets */
+
+
+/* start code for grid that covers right side area - not in assestment - for display only */
+.td-flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .td-grid-gutters .td-flex-col,
+  .td-grid-gutters .td-flex-col:first-of-type {
+    padding-left: 0;
+  }
+  
+  .td-grid-2-custom > .td-flex-col,
+  .td-grid-2-custom > .td-flex-col:last-of-type {
+    flex: 0 0 100%;
+  }
+  
+  .td-grid-2-custom > .td-flex-col:last-of-type {
+    padding-top: 1.8rem;
+  }
+
+
+@media (min-width: 48em) {
+  .td-grid-gutters .td-flex-col {
+    padding-left: 2.5rem;
+  }
+  
+  .td-grid-gutters .td-flex-col:first-of-type {
+    padding-left: 0;
+  }
+
+  .td-grid-2-custom .td-flex-col {
+    flex: 1;
+  }
+
+  .td-grid-2-custom .td-flex-col:last-of-type {
+    flex: 0 0 25%;
+    padding-top: 0;
+  }
+}
+/* finish code for grid that covers right side area - not in assestment - for display only */
+
+/* start code for form grid */
+
+.td-form-group {
+    padding-bottom: 0;
+}
+
+.td-form-col {
+    flex: 1;
+}
+
+.td-grid-gutters .td-form-col:first-of-type {
+    padding-left: 0;
+}
+
+.td-form-col-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.td-grid-gutters .td-form-col {
+    padding-left: 0;
+}
+
+.td-form-group .td-form-col-1,
+.td-form-group .td-form-col-2,
+.td-form-group .td-form-col-3,
+.td-form-col-1 .td-form-title
+{
+    flex: 0 0 100%;
+    padding-bottom: 2.5rem;
+}
+  
+@media (min-width: 48em) {
+
+    .td-form-group {
+        padding-bottom: 2.8rem;
+    }
+
+    .td-grid-gutters .td-form-col {
+        padding-left: 1.8rem;
+    }
+
+    .td-form-group > .td-form-col-1 {
+        flex: 0 0 38%;
+    }
+
+    .td-form-group > .td-form-col-2 {
+        flex: 0 0 27%;
+    }
+
+    .td-form-group > .td-form-col-3, 
+    .td-form-col-1 .td-form-title {
+        flex: 0 0 35%;
+    }
+
+    .td-form-col-1 .td-form-input {
+        flex: 0 0 65%;
+    }
+
+    .td-form-group .td-form-col-1,
+    .td-form-group .td-form-col-2,
+    .td-form-group .td-form-col-3,
+    .td-form-col-1 .td-form-title
+    {
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,73 @@
+.navHeader {
+    background-color: #12422b;
+    height: 63px;
+  }
+  
+  .td-header-area {
+    display: flex;
+    align-items: center;
+    height: 63px;
+    padding: 0 5%;
+  }
+  
+  .td-logo {
+    width: 250px;
+    height: 40px;
+  }
+  
+  .td-logo img {
+    width: auto;
+    height: 100%;
+  }
+  
+  .td-login-menu {
+    margin-left: auto;
+    display: flex;
+  }
+  
+  .td-login-menu ul li {
+    display: none;
+  }
+  
+  .td-login-menu ul li:last-of-type {
+    display: flex;
+  }
+  
+  .td-main-menu ul, .td-login-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .td-main-menu ul {
+    display: none;
+  }
+  
+  .td-main-menu ul li, .td-login-menu ul li {
+    color: White;
+    padding: 0 1rem;
+  }
+  
+  .td-login-menu ul li:last-child {
+    padding-right: 0;
+  }
+
+  @media (min-width: 48em) {
+
+    .td-header-area {
+      padding: 0 2%;
+    }
+  
+    .td-main-menu ul {
+      display: flex;
+    }
+
+    .td-login-menu ul li {
+        display: flex;
+    }
+      
+    .td-login-menu ul li:last-of-type {
+    display: flex;
+    }
+  }

@@ -1,0 +1,150 @@
+
+.wide-layout {
+    width: 100%;
+  }
+  
+  .container {
+    margin-right: auto;
+    margin-left: auto
+  }
+  
+  /* madia-query sizes from TD insurance */
+  
+  @media (min-width: 48rem) {
+      .container {
+          width:100%;
+      }
+  }
+  
+  @media (min-width: 64rem) {
+      .container {
+          width:100%;
+      }
+  }
+  
+  @media (min-width: 75rem) {
+      .container {
+          width:1200px
+      }
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 1rem 0 2rem 0;
+    line-height: 2rem;
+    text-align: center;
+  }
+  
+  h3.td-title {
+    margin-top: 2rem;
+  }
+  
+  .content-summary {
+    margin: 0 0 3rem 0;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .td-form-container {
+    padding: 1rem;
+  }
+  
+  @media (min-width: 48em) {
+  
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin: 0 0 1.6rem 0;
+      line-height: 2.2rem;
+      text-align: left;
+    }
+  
+    h3.td-title {
+      margin-top: 1rem;
+    }
+    
+    .td-form-container {
+      padding: 3rem 2.5rem 2rem;
+    }
+  }
+  
+  .td-input {
+    border-width: 0 1px 1px 1px;
+    border-color: #bdbdbd;
+    border-left-color: white;
+    height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  
+  select.td-input {
+    border-left-color: #bdbdbd;
+  }
+  
+  input:focus::-webkit-input-placeholder { color:transparent; }
+  input:focus:-moz-placeholder { color:transparent; }
+  
+  .td-input:hover, .td-input:focus {
+    border-bottom-color: #12422b;
+    border-bottom-width: 2px;
+  }
+  
+  .td-form-inputType-3 {
+    display: flex;
+    width: 100%;
+  }
+  
+  .td-form-inputType-3 .td-input {
+    display: flex;
+  }
+  
+  .td-help-icon {
+    color: #43a26a;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  .td-help-icon i {
+    padding: 5px 0 0 5px;
+  }
+  
+  .td-submit-group {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px 20px 0;
+  }
+  
+  .td-btn {
+    font-family: "Webly Sleek";
+    font-weight: 300;
+    border: medium none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    outline: medium none;
+    padding: 8px 12px 9px 12px;
+    text-align: center;
+    transition: all 400ms ease 0s;
+    vertical-align: middle;
+    color: white;
+  }
+  
+  .td-cancel-btn {
+    background-color: #c65415;
+  }
+  
+  .td-submit-btn {
+    background-color: #00a221;
+    width: 100%;
+  }
+  
+  .td-submit-group .td-submit-btn {
+    margin-left: 25px;
+    width: auto;
+  }
+  

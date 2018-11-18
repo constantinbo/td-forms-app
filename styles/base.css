@@ -1,0 +1,46 @@
+/* I used the default web fonts library from TD Insurance web site and Material Icon for the help icon */
+
+@font-face {
+    font-family: "Webly Sleek";
+    src: url("./../assets/fonts/weblysleekuil-webfont.eot");
+    src: url("./../assets/fonts/weblysleekuil-webfont.eot?#iefix") format("embedded-opentype"),url("./../assets/fonts/weblysleekuil-webfont.woff2") format("woff2"),url("./../assets/fonts/weblysleekuil-webfont.woff") format("woff"),url("./../assets/fonts/weblysleekuil-webfont.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.4rem;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
+  /* I noticed TD is using this border-box by default for box-sizing */
+  *, *:before,*:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font: 1rem/1.25rem "Webly Sleek",Helvetica-,droid sans,sans-serif;
+    color: #1c1c1c;
+    background-color: #efeff4;
+    margin: 0;
+  }
