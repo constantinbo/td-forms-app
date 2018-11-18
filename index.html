@@ -2,38 +2,130 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="shortcut icon" href="./favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+    <link href="./styles/base.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/header.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/css-custom-grid.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/styles.css" rel="stylesheet" type="text/css" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>TD Insurance Form Assesment</title>
   </head>
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root">
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="wide-layout">
+      <header id="navbar" role="banner" class="navHeader">
+        <div class="container">
+          <div class="td-header-area">
+            <div class="td-logo">
+              <a href="http://td.com">
+                <img src="https://myinsurance.td.com//waw/ins/cpam/assets/images/TDAssurance_EN.svg" alt="TD logo" />
+              </a>
+            </div>
+            <div class="td-main-menu">
+              <ul>
+                <li>Products</li>
+                <li>Claims</li>
+                <li>Contact us</li>
+              </ul>
+            </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+            <div class="td-login-menu">
+              <ul>
+                <li>Ontario</li>
+                <li>EN</li>
+                <li>Login</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="td-main-content">
+        <div class="container">
+          <div class="td-form-container">
+            <div class="td-flex-grid td-grid-gutters td-grid-2-custom">
+              <div class="td-flex-col">
+                <h3 class="td-title">Tell Us About Yorself</h3>
+                <p class="content-summary">
+                  Thanks you for choosing TD Insurance! In order to safety set up your new account and servicess, please tell us about yourself.
+                </p>
+                <h3>Personal Information</h3>
+                <div class="td-flex-grid td-grid-gutters td-form-group">
+                  <div class="td-form-col td-form-col-1">
+                    <div class="td-form-col td-form-title">
+                      <select id="td-title-select" class="td-input" aria-label="Title" tabIndex="1">
+                        <option value="">Title*</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                      </select>
+                    </div>
+                    <div class="td-form-col td-form-input">
+                      <input type="text" class="td-input" aria-label="First Name" tabIndex="2" name="firstName" placeholder="First Name*"></input>
+                    </div>
+                  </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-</div>  
+                  <div class="td-form-col td-form-col-2">
+                    <div class="td-form-input">
+                      <input type="text" class="td-input" aria-label="Middle Initial" tabIndex="3" name="middleInitial" placeholder="Middle Initial"></input>
+                    </div>
+                  </div>
+
+                  <div class="td-form-col td-form-col-3">
+                      <div class="td-form-inputType-2">
+                        <input type="text" class="td-input" aria-label="Last Name" tabIndex="4" name="lastName" placeholder="Last Name*"></input>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="td-flex-grid td-grid-gutters td-form-group">
+                  <div class="td-form-col td-form-col-1">
+                    <div class="td-form-inputType-3">
+                      <input type="email" class="td-input" aria-label="Email Address*" tabIndex="5" name="emailAddress" placeholder="Email Address*"></input>
+                      <span class="td-help-icon"><i class="material-icons">help_outline</i></span>
+                    </div>
+                  </div>
+
+                  <div class="td-form-col td-form-col-2">
+                    <div class="td-form-input">
+                      <input type="text" class="td-input" aria-label="Date of Birth" tabIndex="6" name="dateBirth" placeholder="Date of Birth*"></input>
+                    </div>
+                  </div>
+
+                  <div class="td-form-col td-form-col-3">
+                      <div class="td-form-inputType-3">
+                      <input type="text" class="td-input" aria-label="Social Insurance Number*" tabIndex="7" name="snc" placeholder="Social Insurance Number*"></input>
+                      <span class="td-help-icon"><i class="material-icons">help_outline</i></span>
+                      </div>
+                  </div>
+                </div>
+
+
+                <div class="td-flex-grid td-grid-gutters td-form-group">
+                  <div class="td-submit-group">
+                    <button type="button" class="td-btn td-cancel-btn" tabIndex="8">Cancel</button>
+                    <button type="button" class="td-btn td-submit-btn" tabIndex="9">Submit</button>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              
+              <div class="td-flex-col">
+                <p class="content-summary">
+                  You are applying for...
+                </p>
+                <h3>TD®‎ Travel Medical Insurance</h3>
+                <button class="td-btn td-submit-btn">See More Coverage Options</button>
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
+        </section>
+      </div>
 </body>
 </html>
+
+
